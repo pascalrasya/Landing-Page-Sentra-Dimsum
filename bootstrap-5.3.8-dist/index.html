@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentra Dimsum Bandung | Produsen Dimsum Frozen Reguler & Premium</title>
+<meta name="description" content="Sentra Dimsum Bandung: produsen dan distributor dimsum frozen vacuum isi 10 pcs. Pilihan reguler dan premium, pesan lewat WhatsApp, Shopee, Tokopedia, atau GoFood.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥟</text></svg>">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d62828;--red-dark:#a91f1f;--gold:#ffb300;--ink:#2b2b2b}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:72px}
+body{font-family:Arial,Helvetica,sans-serif;background:#fffaf5;color:var(--ink)}
+.navbar{background:#fff}
+.navbar-brand{font-weight:bold;color:var(--red)}
+.nav-link:hover,.nav-link:focus{color:var(--red)}
+.hero{background:linear-gradient(135deg,#fff0df,#ffe0c2);min-height:600px;display:flex;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5vw,3.4rem);font-weight:800}
+.hero h1 span{color:var(--red)}
+.hero img{max-height:430px;width:100%;object-fit:cover;border-radius:30px}
+.hero-stat strong{display:block;font-size:1.5rem;color:var(--red)}
+.btn-dimsum{background:var(--red);color:#fff;border-radius:30px;padding:12px 28px;font-weight:bold;border:0}
+.btn-dimsum:hover,.btn-dimsum:focus{background:var(--red-dark);color:#fff}
+.section-title{font-weight:800}
+.menu-card{border:0;border-radius:20px;overflow:hidden;transition:transform .3s;background:#fff;box-shadow:0 5px 20px rgba(0,0,0,.08)}
+.menu-card:hover{transform:translateY(-6px)}
+.menu-card img{height:200px;object-fit:cover}
+.price{color:var(--red);font-size:18px;font-weight:bold}
+.tag{font-size:.7rem;font-weight:bold;padding:3px 10px;border-radius:20px}
+.tag-reg{background:#fde4e4;color:var(--red-dark)}
+.tag-prem{background:#fff1cc;color:#8a5a00}
+.filter .btn{border-radius:30px;font-weight:bold}
+.filter .btn.active{background:var(--red);border-color:var(--red);color:#fff}
+.promo{background:var(--red);color:#fff;border-radius:25px}
+.feature,.step{background:#fff;border-radius:20px;padding:30px;height:100%;box-shadow:0 5px 20px rgba(0,0,0,.06)}
+.feature i,.step i{font-size:40px;color:var(--red)}
+.step-no{width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:bold}
+.about-img{border-radius:25px;width:100%}
+.accordion-button:not(.collapsed){background:#fde4e4;color:var(--red-dark)}
+.accordion-item{border-radius:12px;overflow:hidden;margin-bottom:10px;border:1px solid #f0e0d0}
+.info-box{background:#fff;border-radius:20px;padding:28px;box-shadow:0 5px 20px rgba(0,0,0,.06);height:100%}
+.channel{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:30px;border:1px solid #e5cfc0;background:#fff;color:var(--ink);text-decoration:none;font-weight:bold;font-size:.9rem}
+.channel:hover{border-color:var(--red);color:var(--red)}
+.qty{display:inline-flex;align-items:center;border:1px solid #e5cfc0;border-radius:30px;overflow:hidden;background:#fff}
+.qty button{border:0;background:transparent;width:30px;height:30px;font-weight:bold;color:var(--red)}
+.qty button:hover{background:#fde4e4}
+.qty span{min-width:26px;text-align:center;font-weight:bold;font-size:.9rem}
+.cart-float{position:fixed;right:18px;bottom:88px;height:56px;padding:0 20px;border-radius:30px;background:var(--red);color:#fff;border:0;font-weight:bold;display:flex;align-items:center;gap:8px;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:1030}
+.cart-float:hover{background:var(--red-dark)}
+.cart-float .badge{background:#fff;color:var(--red)}
+footer{background:#222;color:#fff}
+footer a{color:#fff}
+.wa-float{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:1030;text-decoration:none}
+.wa-float:hover{color:#fff;background:#1eb85a}
+@media (max-width:768px){.hero{min-height:auto;padding:70px 0;text-align:center}.hero img{margin-top:40px;max-height:300px}.hero .hero-stats{justify-content:center}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.menu-card{transition:none}}
+
+/* ===== UI/UX UPGRADE ===== */
+body{font-family:"Nunito",system-ui,sans-serif;font-size:clamp(.95rem,.9rem + .2vw,1.05rem);overflow-x:hidden}
+h1,h2,h3,h4,h5,.navbar-brand,.price,.btn{font-family:"Baloo 2","Nunito",sans-serif}
+.progress-bar-top{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--red));z-index:2000}
+.navbar{background:rgba(255,255,255,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:box-shadow .3s,padding .3s}
+.navbar.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.08)!important}
+.nav-link{position:relative;font-weight:600}
+.nav-link::after{content:"";position:absolute;left:.5rem;right:.5rem;bottom:2px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav-link:hover::after,.nav-link.active::after{transform:scaleX(1)}
+.nav-link.active{color:var(--red)}
+section[id]{padding-block:clamp(2.5rem,6vw,5rem)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#ffe9cf 0,transparent 45%),radial-gradient(circle at 90% 80%,#ffd2c4 0,transparent 40%),#fff3e4;min-height:min(88vh,720px)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(2px);z-index:0}
+.hero::before{width:320px;height:320px;background:rgba(214,40,40,.08);top:-90px;right:-70px;animation:drift 12s ease-in-out infinite}
+.hero::after{width:200px;height:200px;background:rgba(255,179,0,.16);bottom:-50px;left:-40px;animation:drift 10s ease-in-out infinite reverse}
+.hero .container{position:relative;z-index:1}
+.hero-visual{position:relative;max-width:520px;margin-inline:auto}
+.hero-visual img{transform:rotate(2deg);box-shadow:0 30px 60px rgba(150,40,20,.25)!important;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.hero-visual:hover img{transform:rotate(0) scale(1.02)}
+.steam{position:absolute;top:4%;left:50%;transform:translateX(-50%);display:flex;gap:26px;pointer-events:none}
+.steam span{width:14px;height:64px;border-radius:50%;background:rgba(255,255,255,.85);filter:blur(9px);opacity:0;animation:rise 3.2s ease-in infinite}
+.steam span:nth-child(2){animation-delay:1s;height:80px}
+.steam span:nth-child(3){animation-delay:2s}
+.chip{position:absolute;background:#fff;border-radius:30px;padding:8px 16px;font-weight:700;font-size:.85rem;box-shadow:0 10px 24px rgba(0,0,0,.14);display:flex;gap:6px;align-items:center;animation:floaty 4s ease-in-out infinite}
+.chip i{color:var(--red)}
+.chip.c1{left:-4%;bottom:14%}
+.chip.c2{right:-3%;top:18%;animation-delay:1.3s}
+.hero h1{line-height:1.05;letter-spacing:-.02em}
+.hero-stat strong{font-family:"Baloo 2",sans-serif}
+.btn-dimsum{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,background .25s;box-shadow:0 8px 20px rgba(214,40,40,.3)}
+.btn-dimsum::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 4s ease-in-out infinite}
+.btn-dimsum:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(214,40,40,.4)}
+.btn:active{transform:scale(.97)}
+.marquee{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0}
+.marquee-track{display:inline-flex;gap:2.5rem;animation:scroll 32s linear infinite;font-weight:700}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track span::before{content:"🥟";margin-right:.6rem}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:clamp(1rem,2.4vw,1.75rem)}
+.menu-card{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.menu-card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(214,40,40,.18)}
+.menu-card .img-wrap{overflow:hidden}
+.menu-card img{aspect-ratio:4/3;height:auto;width:100%;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.menu-card:hover img{transform:scale(1.08)}
+[data-cat]{animation:pop .45s cubic-bezier(.2,.8,.2,1) both}
+.filter .btn{transition:all .25s}
+.filter .btn:hover{transform:translateY(-2px)}
+.qty button{transition:background .2s,transform .15s}
+.qty button:active{transform:scale(.85)}
+.cart-float{transition:transform .25s,background .25s}
+.cart-float:hover{transform:translateY(-3px)}
+.cart-float.bump{animation:bump .5s}
+.wa-float{animation:pulse 2.6s infinite}
+.offcanvas{width:min(420px,100vw)!important}
+#cartItems>div{animation:pop .3s both}
+.promo{background:linear-gradient(120deg,var(--red),#ef5350,var(--red));background-size:200% 100%;animation:gradmove 8s ease infinite}
+.feature,.step,.info-box{transition:transform .35s,box-shadow .35s}
+.feature:hover,.step:hover,.info-box:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(0,0,0,.1)}
+.feature i,.step-no{transition:transform .4s}
+.feature:hover i{transform:scale(1.2) rotate(-6deg)}
+.step:hover .step-no{transform:scale(1.15)}
+.about-img{transition:transform .6s}
+.about-img:hover{transform:scale(1.02) rotate(-1deg)}
+.accordion-button{font-weight:700;font-family:"Baloo 2",sans-serif}
+.accordion-button:focus{box-shadow:0 0 0 .2rem rgba(214,40,40,.2)}
+.toast-lite{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:#222;color:#fff;padding:12px 22px;border-radius:30px;z-index:2100;opacity:0;transition:transform .4s cubic-bezier(.2,.8,.2,1),opacity .4s;max-width:90vw;text-align:center;pointer-events:none}
+.toast-lite.show{transform:translate(-50%,0);opacity:1}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.js .reveal.in{opacity:1;transform:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@keyframes rise{0%{transform:translateY(30px) scaleX(.8);opacity:0}30%{opacity:.8}100%{transform:translateY(-70px) scaleX(1.4);opacity:0}}
+@keyframes floaty{50%{transform:translateY(-10px)}}
+@keyframes drift{50%{transform:translate(20px,26px)}}
+@keyframes shine{0%,60%{left:-70%}100%{left:130%}}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@keyframes pop{from{opacity:0;transform:scale(.92) translateY(10px)}to{opacity:1;transform:none}}
+@keyframes bump{30%{transform:scale(1.18)}60%{transform:scale(.95)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%,100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
+@keyframes gradmove{50%{background-position:100% 0}}
+@media (max-width:768px){.chip.c1{left:0}.chip.c2{right:0}.cart-float{padding:0;width:56px;justify-content:center}.cart-float .lbl{display:none}.cart-float .badge{position:absolute;top:-4px;right:-4px}.hero-visual{margin-top:1.5rem}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="progress-bar-top" id="progress"></div>
+<div class="toast-lite" id="toast" role="status" aria-live="polite"></div>
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fs-4" href="#home"><i class="bi bi-egg-fried"></i> Sentra Dimsum</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka menu navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cara-pesan">Cara Pesan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Lokasi & Kontak</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a href="#menu" class="btn btn-dimsum">Pesan Sekarang</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <span class="badge bg-danger mb-3">Produsen & Distributor Dimsum Bandung</span>
+        <h1>Nikmati <span>Dimsum</span> Favoritmu!</h1>
+        <p class="lead text-secondary my-4">Dimsum reguler dan premium dalam kemasan frozen vacuum isi 10 pcs. Tinggal kukus, siap santap untuk keluarga, acara, atau stok jualan.</p>
+        <a href="#menu" class="btn btn-dimsum me-2 mb-2">Lihat Menu</a>
+        <a href="#about" class="btn btn-outline-dark rounded-pill px-4 py-2 mb-2">Tentang Kami</a>
+        <div class="d-flex flex-wrap gap-4 mt-4 hero-stats">
+          <div class="hero-stat"><strong><span data-count="12">12</span> varian</strong><small class="text-secondary">reguler & premium</small></div>
+          <div class="hero-stat"><strong><span data-count="10">10</span> pcs</strong><small class="text-secondary">per vacuum pack</small></div>
+          <div class="hero-stat"><strong><span data-count="25">25</span>k</strong><small class="text-secondary">harga mulai / pack</small></div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="hero-visual"><div class="steam" aria-hidden="true"><span></span><span></span><span></span></div><img src="sentradimsumindonesia.jpg" class="img-fluid shadow" alt="Aneka dimsum frozen Sentra Dimsum Bandung" width="600" height="430"><div class="chip c1"><i class="bi bi-snow2"></i> Frozen Vacuum</div><div class="chip c2"><i class="bi bi-stars"></i> Reguler & Premium</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- MENU -->
+<section class="py-5" id="menu">
+  <div class="container py-4">
+    <div class="text-center mb-4">
+      <p class="text-danger fw-bold">MENU FAVORIT (ISI 10 PCS / PACK)</p>
+      <h2 class="section-title">Pilihan Dimsum Kami</h2>
+      <p class="text-secondary">Pilih beberapa varian dan jumlah pack, tekan Tambah, lalu kirim pesanan lewat WhatsApp.</p>
+    </div>
+    <div class="filter d-flex justify-content-center flex-wrap gap-2 mb-4" role="group" aria-label="Filter menu">
+      <button class="btn btn-outline-danger active" data-filter="all">Semua</button>
+      <button class="btn btn-outline-danger" data-filter="reguler">Reguler</button>
+      <button class="btn btn-outline-danger" data-filter="premium">Premium</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+    <p class="text-center text-secondary small mt-4 mb-0">Harga per pack isi 10 pcs. Harga dan ketersediaan dapat berubah, konfirmasi ke admin sebelum memesan.</p>
+  </div>
+</section>
+
+<!-- PROMO -->
+<section class="py-4">
+  <div class="container">
+    <div class="promo p-4 p-md-5">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2 class="fw-bold">Siap Restock Dimsum Favoritmu? 🎉</h2>
+          <p class="mb-0">Cocok untuk stok di rumah, acara keluarga, maupun reseller dan usaha kuliner. Tanyakan harga untuk pembelian dalam jumlah besar.</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-4 mt-md-0">
+          <a href="#contact" class="btn btn-light rounded-pill px-4">Hubungi Admin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARA PESAN -->
+<section class="py-5" id="cara-pesan">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <p class="text-danger fw-bold">CARA PESAN</p>
+      <h2 class="section-title">Pesan dalam 3 Langkah</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="step text-center"><span class="step-no mb-3">1</span><h5 class="fw-bold">Pilih varian dan jumlah</h5><p class="text-secondary mb-0">Tambahkan beberapa menu ke keranjang beserta jumlah pack-nya.</p></div></div>
+      <div class="col-md-4"><div class="step text-center"><span class="step-no mb-3">2</span><h5 class="fw-bold">Pesan lewat kanal favoritmu</h5><p class="text-secondary mb-0">Chat WhatsApp, atau order lewat Shopee, Tokopedia, dan GoFood.</p></div></div>
+      <div class="col-md-4"><div class="step text-center"><span class="step-no mb-3">3</span><h5 class="fw-bold">Terima dan simpan di freezer</h5><p class="text-secondary mb-0">Pesanan dikemas vacuum. Simpan beku, kukus saat ingin disantap.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-5 bg-white" id="about">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <img src="images1.jpg" class="about-img shadow" alt="Daftar menu Sentra Dimsum Bandung" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <p class="text-danger fw-bold">TENTANG KAMI</p>
+        <h2 class="section-title mb-3">Pabrik Dimsum Bandung untuk Semua</h2>
+        <p class="text-secondary">Sentra Dimsum Bandung adalah produsen dan distributor dimsum yang berbasis di kawasan Turangga, Lengkong, Kota Bandung. Kami memproduksi dimsum reguler maupun premium dalam kemasan frozen vacuum, dengan slogan <strong>"Sehat, Cerdas, Manusiawi"</strong>.</p>
+        <p class="text-secondary">Selain membeli langsung di toko, dimsum kami bisa dipesan lewat Shopee, Tokopedia, dan GoFood, sehingga mudah dijangkau pelanggan rumahan maupun pelaku usaha.</p>
+        <div class="row mt-4 g-3">
+          <div class="col-6"><h3 class="fw-bold text-danger">Halal</h3><p class="text-secondary mb-0">Diproduksi sendiri</p></div>
+          <div class="col-6"><h3 class="fw-bold text-danger">Vacuum Pack</h3><p class="text-secondary mb-0">Aman & praktis</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="py-5" id="keunggulan">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <p class="text-danger fw-bold">KENAPA SENTRA DIMSUM?</p>
+      <h2 class="section-title">Kelebihan Kami</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3"><div class="feature text-center"><i class="bi bi-heart-fill"></i><h5 class="fw-bold mt-3">Banyak Pilihan Topping</h5><p class="text-secondary mb-0">Udang, crabstick, salmon, mentai, hingga nori.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="feature text-center"><i class="bi bi-box-seam-fill"></i><h5 class="fw-bold mt-3">Kemasan Vacuum</h5><p class="text-secondary mb-0">Menjaga kualitas dan kesegaran lebih lama di freezer.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="feature text-center"><i class="bi bi-wallet2"></i><h5 class="fw-bold mt-3">Harga Terjangkau</h5><p class="text-secondary mb-0">Dimsum reguler mulai 25k, premium mulai 35k per pack.</p></div></div>
+      <div class="col-md-6 col-lg-3"><div class="feature text-center"><i class="bi bi-bag-check-fill"></i><h5 class="fw-bold mt-3">Mudah Dipesan</h5><p class="text-secondary mb-0">WhatsApp, Shopee, Tokopedia, atau GoFood.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5 bg-white" id="faq">
+  <div class="container py-4" style="max-width:800px">
+    <div class="text-center mb-4">
+      <p class="text-danger fw-bold">PERTANYAAN UMUM</p>
+      <h2 class="section-title">FAQ</h2>
+    </div>
+    <div class="accordion accordion-flush" id="faqList">
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f1">Satu pack isi berapa?</button></h3><div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body text-secondary">Semua varian dijual per pack isi 10 pcs dalam kemasan frozen vacuum.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Bagaimana cara menyajikannya?</button></h3><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body text-secondary">Kukus dimsum langsung dari kondisi beku sampai matang, sekitar 10-15 menit, lalu sajikan dengan saus favoritmu. Varian mentai bisa dipanaskan dengan torch atau oven agar sausnya lebih harum.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Berapa lama dimsum bisa disimpan?</button></h3><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body text-secondary">Simpan di freezer dan jangan biarkan mencair lalu dibekukan lagi. Tanyakan masa simpan tiap varian ke admin.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">Bisa beli untuk dijual lagi?</button></h3><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body text-secondary">Bisa. Kami melayani pembelian dalam jumlah besar untuk reseller dan usaha kuliner. Hubungi admin lewat WhatsApp.</div></div></div>
+      <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5">Bisa datang langsung ke toko?</button></h3><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqList"><div class="accordion-body text-secondary">Bisa. Lihat alamat di bagian Lokasi & Kontak. Jalan di sekitar toko cukup sempit dan parkir terbatas, jadi hati-hati jika membawa mobil atau pilih pesan online.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-5" id="contact">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <p class="text-danger fw-bold">LOKASI & KONTAK</p>
+      <h2 class="section-title">Siap Menikmati Dimsum?</h2>
+      <p class="text-secondary">Hubungi admin untuk pemesanan atau kunjungi kami langsung.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="info-box">
+          <h5 class="fw-bold"><i class="bi bi-geo-alt-fill text-danger"></i> Alamat</h5>
+          <p class="mb-2"><strong>Toko Pusat</strong><br>Jl. Maskumambang No. 11, Bandung</p>
+          <p class="mb-3"><strong>Kantor & Pabrik</strong><br>Kawasan Turangga (Jl. Sinom), Kec. Lengkong, Kota Bandung 40264</p>
+          <a class="btn btn-outline-danger rounded-pill btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sentra+Dimsum+Jl.+Maskumambang+11+Bandung"><i class="bi bi-map"></i> Buka di Google Maps</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-box">
+          <h5 class="fw-bold"><i class="bi bi-chat-dots-fill text-danger"></i> Pesan lewat</h5>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="channel" target="_blank" rel="noopener" href="https://shopee.co.id/sentradimsum"><i class="bi bi-bag"></i> Shopee</a>
+            <a class="channel" target="_blank" rel="noopener" href="https://linktr.ee/sentradimsumindonesia"><i class="bi bi-link-45deg"></i> Tokopedia & GoFood</a>
+            <a class="channel" target="_blank" rel="noopener" href="https://www.instagram.com/sentradimsumindonesia/"><i class="bi bi-instagram"></i> Instagram</a>
+          </div>
+          <a id="waMain" href="#" target="_blank" rel="noopener" class="btn btn-dimsum"><i class="bi bi-whatsapp"></i> Pesan via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button class="cart-float" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPanel" aria-label="Buka keranjang pesanan">
+  <i class="bi bi-cart3"></i> <span class="lbl">Keranjang</span> <span class="badge rounded-pill" id="cartCount">0</span>
+</button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartPanel" aria-labelledby="cartTitle">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title fw-bold" id="cartTitle">Keranjang Pesanan</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Tutup"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="cartItems" class="flex-grow-1"></div>
+    <div id="cartFoot" class="border-top pt-3 d-none">
+      <div class="d-flex justify-content-between fw-bold fs-5 mb-3"><span>Total</span><span id="cartTotal" class="text-danger">Rp0</span></div>
+      <input id="buyerName" class="form-control mb-2" placeholder="Nama pemesan (opsional)">
+      <textarea id="buyerNote" class="form-control mb-3" rows="2" placeholder="Alamat / catatan (opsional)"></textarea>
+      <button id="checkoutBtn" class="btn btn-dimsum w-100"><i class="bi bi-whatsapp"></i> Kirim Pesanan via WhatsApp</button>
+      <button id="clearCart" class="btn btn-link text-secondary w-100 mt-1">Kosongkan keranjang</button>
+    </div>
+    <p id="cartEmpty" class="text-secondary text-center my-auto">Keranjang masih kosong. Pilih menu lalu tekan Tambah.</p>
+  </div>
+</div>
+<a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<footer class="py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="fw-bold"><i class="bi bi-egg-fried"></i> Sentra Dimsum Bandung</h5>
+        <p class="text-white-50">Dimsum lezat, praktis, dan terjangkau.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="mb-1">Ikuti kami</p>
+        <a href="https://www.instagram.com/sentradimsumbdg/" class="fs-4 me-2" target="_blank" rel="noopener" aria-label="Instagram Sentra Dimsum Bandung"><i class="bi bi-instagram"></i></a>
+        <a href="#" id="waFoot" class="fs-4" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center text-white-50 mb-0">© 2026 Sentra Dimsum Bandung. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const WA = "6282219998541";
+const wa = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const PH = "data:image/svg+xml;utf8," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="100%" height="100%" fill="#ffe7cf"/><text x="50%" y="52%" font-size="90" text-anchor="middle">🥟</text></svg>');
+// Ganti nilai img dengan foto produk asli masing-masing menu (letakkan di folder yang sama).
+const menu = [
+ {n:" A / Mix Udang",c:"reguler",p:"30k",d:"Topping udang, wortel, jamur, beef, tuna.",img:"images2.jpg"},
+ {n:"Mix B / Mix Crab",c:"reguler",p:"30k",d:"Topping crabstick, wortel, jamur, beef, tuna.",img:"images2.jpg"},
+ {n:"Mix C / Mix Salmon",c:"reguler",p:"30k",d:"Topping salmon, wortel, jamur, beef.",img:"images2.jpg"},
+ {n:"Dimsum Mini",c:"reguler",p:"25k",d:"Topping crabstick, wortel, jamur, beef. Ukuran mungil, pas untuk camilan.",img:"mini.jpg"},
+ {n:"Dimsum Mentai",c:"premium",p:"35k",d:"Dimsum dengan saus mentai gurih dan creamy, paling nikmat setelah di-torch.",img:"images.jpg"},
+ {n:"Mozzarella",c:"premium",p:"35k",d:"Sensasi lumer keju mozzarella di setiap gigitan.",img:"mozza.jpg"},
+ {n:"Ekado",c:"premium",p:"40k",d:"Telur puyuh utuh berbalut kulit tahu renyah.",img:"ekado.jpg"},
+ {n:"Kumis Naga",c:"premium",p:"35k",d:"Berbalut helaian kulit pangsit, gurih dan renyah.",img:"kumis.jpg"},
+ {n:"Nori",c:"premium",p:"35k",d:"Dimsum udang padat dibalut rumput laut nori.",img:"nori.jpg"},
+ {n:"Lumpia",c:"premium",p:"35k",d:"Lumpia kulit tahu isi daging ayam olahan premium.",img:"lumpia.jpg"},
+ {n:"Mercon",c:"premium",p:"35k",d:"Isian cabai dengan sensasi pedas yang meledak di mulut.",img:"mercon.jpg"},
+ {n:"Golden Caviar",c:"premium",p:"35k",d:"Sentuhan topping telur ikan untuk tampilan dan rasa mewah.",img:"golden.jpg"}
+];
+const grid = document.getElementById("menuGrid");
+grid.innerHTML = menu.map((m,i) => `
+ <div data-cat="${m.c}" style="animation-delay:${i*0.04}s">
+  <div class="card menu-card h-100">
+   <div class="img-wrap"><img src="${m.img}" class="card-img-top" alt="${m.n}" loading="lazy" onerror="this.onerror=null;this.src=PH"></div>
+   <div class="card-body d-flex flex-column">
+    <span class="tag ${m.c==='premium'?'tag-prem':'tag-reg'} align-self-start mb-2">${m.c==='premium'?'Premium':'Reguler'}</span>
+    <h5 class="fw-bold">${m.n}</h5>
+    <p class="text-secondary small flex-grow-1">${m.d}</p>
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-3">
+     <span class="price">${m.p} <small class="text-secondary fw-normal">/ 10 pcs</small></span>
+     <div class="d-flex align-items-center gap-2">
+      <div class="qty" role="group" aria-label="Jumlah ${m.n}"><button type="button" data-act="dec" data-i="${i}" aria-label="Kurangi jumlah">-</button><span id="q${i}">1</span><button type="button" data-act="inc" data-i="${i}" aria-label="Tambah jumlah">+</button></div>
+      <button type="button" data-act="add" data-i="${i}" class="btn btn-sm btn-dimsum px-3 py-1">Tambah</button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>`).join("");
+document.querySelectorAll(".filter .btn").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filter .btn").forEach(x => x.classList.remove("active"));
+  b.classList.add("active");
+  const f = b.dataset.filter;
+  grid.querySelectorAll("[data-cat]").forEach(el => el.classList.toggle("d-none", f !== "all" && el.dataset.cat !== f));
+}));
+
+// ===== KERANJANG =====
+const rp = n => "Rp" + n.toLocaleString("id-ID");
+const price = m => parseInt(m.p) * 1000;
+let cart = {}; // {indexMenu: jumlah pack}
+const $ = id => document.getElementById(id);
+function renderCart(){
+  const ids = Object.keys(cart);
+  const count = ids.reduce((t,i)=>t+cart[i],0);
+  const total = ids.reduce((t,i)=>t+cart[i]*price(menu[i]),0);
+  $("cartCount").textContent = count; const cf=document.querySelector(".cart-float"); cf.classList.remove("bump"); void cf.offsetWidth; cf.classList.add("bump");
+  $("cartTotal").textContent = rp(total);
+  $("cartEmpty").classList.toggle("d-none", ids.length>0);
+  $("cartFoot").classList.toggle("d-none", ids.length===0);
+  $("cartItems").innerHTML = ids.map(i => `
+   <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+    <div class="me-2"><div class="fw-bold">${menu[i].n}</div><small class="text-secondary">${rp(price(menu[i]))} x ${cart[i]} = ${rp(price(menu[i])*cart[i])}</small></div>
+    <div class="qty"><button type="button" data-cart="dec" data-i="${i}" aria-label="Kurangi ${menu[i].n}">-</button><span>${cart[i]}</span><button type="button" data-cart="inc" data-i="${i}" aria-label="Tambah ${menu[i].n}">+</button></div>
+   </div>`).join("");
+}
+grid.addEventListener("click", e => {
+  const b = e.target.closest("button[data-act]"); if(!b) return;
+  const i = b.dataset.i, q = $("q"+i);
+  let n = parseInt(q.textContent);
+  if(b.dataset.act==="inc") q.textContent = Math.min(n+1, 99);
+  else if(b.dataset.act==="dec") q.textContent = Math.max(n-1, 1);
+  else {
+    cart[i] = Math.min((cart[i]||0) + n, 99);
+    q.textContent = 1; renderCart();
+    b.textContent = "Ditambahkan ✓"; setTimeout(()=>b.textContent="Tambah", 1200); showToast(`${menu[i].n} x ${n} ditambahkan ke keranjang`);
+  }
+});
+$("cartItems").addEventListener("click", e => {
+  const b = e.target.closest("button[data-cart]"); if(!b) return;
+  const i = b.dataset.i;
+  cart[i] += b.dataset.cart==="inc" ? 1 : -1;
+  if(cart[i] <= 0) delete cart[i];
+  if(cart[i] > 99) cart[i] = 99;
+  renderCart();
+});
+$("clearCart").addEventListener("click", () => { cart = {}; renderCart(); });
+$("checkoutBtn").addEventListener("click", () => {
+  const ids = Object.keys(cart); if(!ids.length) return;
+  const total = ids.reduce((t,i)=>t+cart[i]*price(menu[i]),0);
+  const name = $("buyerName").value.trim(), note = $("buyerNote").value.trim();
+  let t = "Halo Sentra Dimsum, saya mau pesan:\n";
+  ids.forEach((i,k) => t += `${k+1}. ${menu[i].n} x ${cart[i]} pack (isi 10 pcs) = ${rp(cart[i]*price(menu[i]))}\n`);
+  t += `\nTotal: ${rp(total)}`;
+  if(name) t += `\nNama: ${name}`;
+  if(note) t += `\nCatatan/alamat: ${note}`;
+  t += "\n\nMohon konfirmasi ketersediaan dan ongkir. Terima kasih.";
+  window.open(wa(t), "_blank", "noopener");
+});
+renderCart();
+
+// ===== ANIMASI & UX =====
+document.documentElement.classList.add("js");
+let tt; function showToast(m){const t=$("toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),1800)}
+$("marquee").innerHTML = [...menu,...menu].map(m=>`<span>${m.n}</span>`).join("");
+const nav=document.querySelector(".navbar"), bar=$("progress");
+const links=[...document.querySelectorAll(".navbar-nav .nav-link")];
+const secs=links.map(a=>document.querySelector(a.getAttribute("href")));
+function onScroll(){
+  const y=scrollY, h=document.documentElement.scrollHeight-innerHeight;
+  bar.style.width=(h>0?y/h*100:0)+"%";
+  nav.classList.toggle("scrolled",y>10);
+  let cur=0; secs.forEach((el,i)=>{ if(el && el.getBoundingClientRect().top<innerHeight*.35) cur=i; });
+  links.forEach((a,i)=>a.classList.toggle("active",i===cur && y>60));
+}
+addEventListener("scroll",onScroll,{passive:true}); onScroll();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll("section .text-center.mb-5,section .text-center.mb-4,.promo,.step,.feature,.info-box,.accordion-item,#about .col-lg-6").forEach((el,i)=>{el.classList.add("reveal");el.style.setProperty("--d",(i%4)*.08+"s");io.observe(el)});
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);
+  const end=+e.target.dataset.count,t0=performance.now();
+  const step=t=>{const k=Math.min((t-t0)/1200,1);e.target.textContent=Math.round(end*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(step)};
+  matchMedia("(prefers-reduced-motion:reduce)").matches?0:requestAnimationFrame(step)}),{threshold:.6});
+document.querySelectorAll("[data-count]").forEach(el=>cio.observe(el));
+const hi = wa("Halo Sentra Dimsum, saya mau tanya dan pesan dimsum.");
+["waMain","waFloat","waFoot"].forEach(id => document.getElementById(id).href = hi);
+document.querySelectorAll(".navbar-nav .nav-link, .navbar .btn-dimsum").forEach(a => a.addEventListener("click", () => {
+  const c = document.getElementById("navbarNav");
+  if (c.classList.contains("show")) bootstrap.Collapse.getOrCreateInstance(c).hide();
+}));
+</script>
+</body>
+</html>
